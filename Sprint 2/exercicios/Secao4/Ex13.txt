@@ -1,0 +1,5 @@
+SELECT ve.cdpro,ve.nmcanalvendas,ve.nmpro, SUM(ve.qtd) AS quantidade_vendas 
+FROM tbvendas ve
+WHERE ve.status = 'Concluído'
+GROUP BY ve.nmpro,ve.nmcanalvendas 
+ORDER BY quantidade_vendas

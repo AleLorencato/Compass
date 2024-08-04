@@ -1,0 +1,6 @@
+select e.codeditora AS CodEditora,e.nome AS NomeEditora,count(l.cod) as QuantidadeLivros 
+from editora e 
+left join livro l on l.editora = e.codeditora
+group by e.nome
+order by QuantidadeLivros desc
+limit 5

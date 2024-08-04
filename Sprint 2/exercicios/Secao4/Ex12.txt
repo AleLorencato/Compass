@@ -1,0 +1,16 @@
+with vendas_totais as (
+    select
+        v.cdvdd,
+        sum(ve.qtd * ve.vrunt) as valor_total_vendas
+    from tbvendas ve
+    left join tbvendedor v on v.cdvdd = ve.cdvdd 
+    where ve.status = 'Concluído'
+    group by v.cdvdd
+)
+select 
+    d.cddep,d.nmdep,d.dtnasc,vt.valor_total_vendas
+from vendas_totais vt
+left join tbvendedor v on vt.cdvdd = v.cdvdd
+right JOIN tbdependente d ON (d.cdvdd = v.cdvdd)
+ORDER BY vt.valor_total_vendas
+LIMIT 1

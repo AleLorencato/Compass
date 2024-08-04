@@ -1,0 +1,2 @@
+SELECT ve.cdven FROM tbvendas ve WHERE ve.deletado = 1
+ORDER BY ve.cdven

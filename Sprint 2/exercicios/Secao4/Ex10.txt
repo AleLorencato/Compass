@@ -1,0 +1,17 @@
+with comissao_total as (
+    select
+        v.cdvdd,
+        sum(ve.qtd * ve.vrunt) * v.perccomissao as comissao,
+        sum(ve.qtd * ve.vrunt) as valor_total_vendas
+    from tbvendas ve
+    left join tbvendedor v on v.cdvdd = ve.cdvdd 
+    where ve.status = 'Concluído'
+    group by v.cdvdd,v.perccomissao
+)
+select 
+    v.nmvdd as vendedor,
+    ct.valor_total_vendas,
+    round((ct.comissao / 100), 2) as comissao
+from comissao_total ct
+left join tbvendedor v on ct.cdvdd = v.cdvdd
+order by ct.comissao desc;

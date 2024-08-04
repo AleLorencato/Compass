@@ -1,0 +1,4 @@
+SELECT a.nome FROM autor a 
+LEFT JOIN livro l ON (a.codautor = l.autor) 
+WHERE l.cod IS NULL
+ORDER BY a.nome

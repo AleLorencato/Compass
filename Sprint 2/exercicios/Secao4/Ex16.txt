@@ -1,0 +1,5 @@
+SELECT ve.estado,ve.nmpro, round(avg(ve.qtd), 4)AS quantidade_media 
+FROM tbvendas ve
+WHERE ve.status = 'Concluído'
+GROUP BY ve.estado,ve.nmpro
+ORDER BY ve.estado,ve.nmpro

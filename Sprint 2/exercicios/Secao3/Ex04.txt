@@ -1,0 +1,3 @@
+SELECT a.nome,a.codautor,a.nascimento, count(l.cod) AS quantidade FROM autor a left JOIN livro l ON (l.autor = a.codautor)
+GROUP BY a.codautor
+ORDER BY a.nome

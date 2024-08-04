@@ -1,0 +1,12 @@
+WITH valor_total_gasto AS (
+SELECT count(ve.cdcli),
+ve.cdcli,
+sum(ve.qtd * ve.vrunt) as gasto
+FROM tbvendas ve
+GROUP BY ve.cdcli
+)
+SELECT ve.cdcli,ve.nmcli, g.gasto FROM tbvendas ve
+left JOIN valor_total_gasto g ON (ve.cdcli = g.cdcli)
+GROUP BY ve.nmcli
+ORDER BY gasto DESC 
+LIMIT 1

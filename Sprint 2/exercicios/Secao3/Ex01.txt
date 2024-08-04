@@ -1,0 +1,4 @@
+SELECT * 
+FROM livro l 
+WHERE (l.publicacao > '2014-12-31')
+ORDER BY cod;
