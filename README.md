@@ -24,6 +24,11 @@ Neste curso, Vi a parte fundamental e avançada sobre git e alguns dos seus coma
 
 No curso de Linux, vi desde o básico até o avançado em sistemas linux utilizando somente o terminal.
 
+### SQL
+
+No Curso de SQL, vi desde o básico até o avançado na área de análise de dados. Curso este que tem muitos exercícios interessantes para praticar.
+
 ## Sprints
 
 1. [Sprint 1](Sprint%201/README.md)
+2. [Sprint 2](./Sprint%202/README.md)
