@@ -31,4 +31,4 @@ Como Ficou o modelo Relacional Dentro do Dbeaver
 # Certificados
 
 - Certificado do Curso AWS Partner: Sales Accreditation
-  ![Curso AWS Partner](./certificados/13660_3_5965670_1722885234_AWS%20Course%20Completion%20Certificate.pdf)
+  ![Curso AWS Partner](./Certificados/13660_3_5965670_1722885234_AWS%20Course%20Completion%20Certificate.pdf)
