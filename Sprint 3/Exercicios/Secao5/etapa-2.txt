@@ -1,0 +1,44 @@
+def ler_csv(caminho_arquivo):
+    with open(caminho_arquivo, 'r') as arquivo:
+        linhas = arquivo.readlines()
+        dados = []
+        for linha in linhas:
+            campos = []
+            campo_atual = ""
+            entre_aspas = False
+            for caractere in linha.strip():
+                if caractere == '"':
+                    entre_aspas = not entre_aspas
+                elif caractere == ',' and not entre_aspas:
+                    campos.append(campo_atual)
+                    campo_atual = ""
+                else:
+                    campo_atual += caractere
+            campos.append(campo_atual)
+            dados.append(campos)
+    return dados
+
+def media_receita(dados):
+    ## Aqui fiz uma função que calcula a média de bilheteria por filme.
+    receitas_por_filme = {}
+    for dado in dados[1:]:
+        ## A função pega o nome do filme e a receita, e cria um dicionário
+        nome_filme = dado[4]
+        receita = float(dado[5])
+        if nome_filme in receitas_por_filme:
+            receitas_por_filme[nome_filme].append(receita)
+        else:
+            receitas_por_filme[nome_filme] = [receita]
+
+    medias_por_filme = {}
+    for filme, receitas in receitas_por_filme.items():
+        medias_por_filme[filme] = receitas[0]
+    return medias_por_filme
+
+
+caminho_arquivo = 'actors.csv'
+dados = ler_csv(caminho_arquivo)
+
+mediabilhetes = media_receita(dados)
+for filme, mediabilhete in mediabilhetes.items():
+    print(f'O filme {filme} tem média de bilheteria de {mediabilhete}.')

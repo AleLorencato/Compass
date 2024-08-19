@@ -1,18 +1,24 @@
-## Apresentação
+# Olá! meu nome é Alexandre e tenho 20 anos! :smile:
 
-Olá! meu nome é Alexandre e tenho 20 anos! :smile:
+## Sobre mim
+
+![alt text](./FotoPessoal.jpg)
 
 Resido em Pelotas e estou cursando o 3º semestre de Tecnologia em Sistemas para Internet no IFSUL - Câmpus Pelotas.
 
-Tenho alguns projetos desenvolvidos, sendo os mais relevantes:
+---
+
+## Projetos:
 
 - Um Jogo de Batalha naval Feito em C
 - Um Mod de Minecraft em Java
 - Um site de compra e venda de carros (Ainda em Desenvolvimento)
 
-Tive experiência como técnico de infomática no Exército Brasileiro em manutenção de hardware e software, em que trabalhava quase 100% com sistemas linux(Na maioria dos casos Ubuntu).
+---
 
-Agora Sobre Hobbies, Curto Jogar CS e jogos de estratégia no tempo livre, mas também gosto de passar tempo com a família.
+- Experiência: Tive experiência como técnico de infomática no Exército Brasileiro em manutenção de hardware e software, em que trabalhava quase 100% com sistemas linux(Na maioria dos casos Ubuntu).
+- Conhecimentos: Tenho conhecimento em C, Java, Python, PHP, HTML, CSS, JavaScript, SQL, Git e Linux.
+- Hobbies: Jogar CS e jogos de estratégia no tempo livre.
 
 ## O que Estou Aprendendo
 
@@ -28,7 +34,12 @@ No curso de Linux, vi desde o básico até o avançado em sistemas linux utiliza
 
 No Curso de SQL, vi desde o básico até o avançado na área de análise de dados. Curso este que tem muitos exercícios interessantes para praticar.
 
+### Python
+
+No Curso de Python, vi desde o básico até o avançado na área de desenvolvimento de software. Curso este que tem muitos exercícios interessantes para praticar.
+
 ## Sprints
 
-1. [Sprint 1](Sprint%201/README.md)
-2. [Sprint 2](./Sprint%202/README.md)
+- [Sprint 1](Sprint%201/README.md)
+- [Sprint 2](./Sprint%202/README.md)
+- [Sprint 3](./Sprint%203/README.md)

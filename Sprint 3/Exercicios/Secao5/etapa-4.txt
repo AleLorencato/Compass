@@ -1,0 +1,39 @@
+def ler_csv(caminho_arquivo):
+    with open(caminho_arquivo, 'r') as arquivo:
+        linhas = arquivo.readlines()
+        dados = []
+        for linha in linhas:
+            campos = []
+            campo_atual = ""
+            entre_aspas = False
+            for caractere in linha.strip():
+                if caractere == '"':
+                    entre_aspas = not entre_aspas
+                elif caractere == ',' and not entre_aspas:
+                    campos.append(campo_atual)
+                    campo_atual = ""
+                else:
+                    campo_atual += caractere
+            campos.append(campo_atual)
+            dados.append(campos)
+    return dados
+
+def contagem_filme(dados):
+    aparicoes_filme = {}
+    ## Aqui fiz uma função que conta quantas vezes cada filme aparece no dataset.
+    for dado in dados[1:]:
+        nome_filme = dado[4]
+        if nome_filme in aparicoes_filme:
+            aparicoes_filme[nome_filme] += 1
+        else:
+            aparicoes_filme[nome_filme] = 1
+
+    filmes_ordenados = sorted(aparicoes_filme.items(), key=lambda x: (-x[1], x[0]))
+    return filmes_ordenados
+
+caminho_arquivo = 'actors.csv'
+dados = ler_csv(caminho_arquivo)
+
+filmes_ordenados = contagem_filme(dados)
+for filme,quantidade in filmes_ordenados:
+    print(f'O filme {filme} aparece {quantidade} vez(es) no dataset')

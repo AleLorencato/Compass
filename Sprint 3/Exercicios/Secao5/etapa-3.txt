@@ -1,0 +1,49 @@
+def ler_csv(caminho_arquivo):
+    with open(caminho_arquivo, 'r') as arquivo:
+        linhas = arquivo.readlines()
+        dados = []
+        for linha in linhas:
+            campos = []
+            campo_atual = ""
+            entre_aspas = False
+            for caractere in linha.strip():
+                if caractere == '"':
+                    entre_aspas = not entre_aspas
+                elif caractere == ',' and not entre_aspas:
+                    campos.append(campo_atual)
+                    campo_atual = ""
+                else:
+                    campo_atual += caractere
+            campos.append(campo_atual)
+            dados.append(campos)
+    return dados
+
+def media_receita(dados):
+    ## Aqui fiz uma função que calcula a média de receita dos filmes para cada ator,
+    ## armazenando o resultado em um dicionário.
+    receitas_por_filme_ator = {}
+
+    for dado in dados[1:]:
+        nome_filme = dado[4]
+        media_receita = float(dado[3])
+        nome_ator = dado[0]
+
+        if nome_filme not in receitas_por_filme_ator:
+            receitas_por_filme_ator[nome_filme] = {}
+
+        receitas_por_filme_ator[nome_filme][nome_ator] = media_receita
+
+    maior_ator_filme = {}
+    for filme, medias in receitas_por_filme_ator.items():
+        maior_media = max(medias, key=medias.get)
+        maior_ator_filme[filme] = (maior_media, medias[maior_media])
+
+    return maior_ator_filme
+
+
+caminho_arquivo = 'actors.csv'
+dados = ler_csv(caminho_arquivo)
+
+resultado = media_receita(dados)
+for filme, (ator, media) in resultado.items():
+    print(f'No Filme: {filme}, o {ator} é o que tem a maior média de receita: {media}.')

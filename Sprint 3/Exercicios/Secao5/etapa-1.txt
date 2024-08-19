@@ -1,0 +1,40 @@
+def ler_csv(caminho_arquivo):
+    ## Aqui fiz uma função que lê o arquivo CSV e retorna uma lista de listas,
+    ## varrendo linha por linha e separando os campos por vírgula.
+    with open(caminho_arquivo, 'r') as arquivo:
+        linhas = arquivo.readlines()
+        dados = []
+        for linha in linhas:
+            campos = []
+            campo_atual = ""
+            entre_aspas = False
+            for caractere in linha.strip():
+                if caractere == '"':
+                    entre_aspas = not entre_aspas
+                elif caractere == ',' and not entre_aspas:
+                    campos.append(campo_atual)
+                    campo_atual = ""
+                else:
+                    campo_atual += caractere
+            campos.append(campo_atual)
+            dados.append(campos)
+    return dados
+
+def maior_numero_filme(dados):
+    totalfilmes = 0
+    valida = 0
+    contadorfilmes = 0
+    contadorator = ""
+    for linha in dados[1:]:
+        totalfilmes = float(linha[2])
+        if totalfilmes > valida:
+            valida = totalfilmes
+            contadorator = linha[0]
+            contadorfilmes = int(linha[2])
+    return contadorator, contadorfilmes
+
+caminho_arquivo = 'actors.csv'
+dados = ler_csv(caminho_arquivo)
+
+ator, numero_de_filmes = maior_numero_filme(dados)
+print(f'O ator com o maior número de filmes é {ator} com {numero_de_filmes} filmes.')
