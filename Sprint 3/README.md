@@ -34,4 +34,4 @@ Evidência 5: Etapa 5
 # Certificados
 
 - Certificado do Curso AWS Partner: Economias na Nuvem AWS
-  ![Curso AWS Partner](./Certificados/16197_3_5965670_1724009992_AWS Course Completion Certificate.pdf)
+  ![Curso AWS Partner](./Certificados/16197_3_5965670_1724009992_AWS%20Course%20Completion%20Certificate.pdf)
