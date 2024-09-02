@@ -32,14 +32,19 @@ No curso de Linux, vi desde o básico até o avançado em sistemas linux utiliza
 
 ### SQL
 
-No Curso de SQL, vi desde o básico até o avançado na área de análise de dados. Curso este que tem muitos exercícios interessantes para praticar.
+No Curso de SQL, vi desde o básico até o avançado na área de análise de dados. Este curso tem um desafio final que é muito interessante para praticar.
 
 ### Python
 
-No Curso de Python, vi desde o básico até o avançado na área de desenvolvimento de software. Curso este que tem muitos exercícios interessantes para praticar.
+No Curso de Python, vi desde o básico até o avançado na área de programação e lógica.
+
+### Docker
+
+Neste curso, vi desde o básico até o avançado em Docker, como criar imagens, containers, volumes e redes.
 
 ## Sprints
 
 - [Sprint 1](Sprint%201/README.md)
 - [Sprint 2](./Sprint%202/README.md)
 - [Sprint 3](./Sprint%203/README.md)
+- [Sprint 4](./Sprint%204/README.md)
