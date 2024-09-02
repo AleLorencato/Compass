@@ -1,4 +1,4 @@
-# Desafio - Sprint 3
+# Desafio - Sprint 4
 
 Abaixo seguem todos os links dos entregáveis solicitados:
 
@@ -6,15 +6,18 @@ Abaixo seguem todos os links dos entregáveis solicitados:
 
 1. Etapa I -
 
+- [Pasta da Etapa](./etapa1/)
 - [Arquivo Python](./etapa1/carguru.py)
 - [Dockerfile](./etapa1/dockerfile)
 
 2. Etapa II -
 
+- [Pasta da Etapa](./etapa2/)
 - [Arquivo Markdown](./etapa2/README.md)
 
 3 - Etapa III -
 
+- [Pasta da Etapa](./etapa3/)
 - [Arquivo Python](./etapa3/mascarar_dados.py)
 - [Dockerfile](./etapa3/dockerfile)
 
