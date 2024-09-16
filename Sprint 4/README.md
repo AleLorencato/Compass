@@ -25,4 +25,4 @@ Evidência 3: Print das imagens no Docker
   ![Curso AWS Partner](./Certificados/1851_3_5965670_1724960844_AWS%20Course%20Completion%20Certificate.pdf)
 
 - Certificado do Curso AWS Partner: Credenciamento técnico da AWS
-  ![Curso AWS Partner](./certificados/13246_3_5965670_1725040993_AWS%20Course%20Completion%20Certificate.pdf)
+  ![Curso AWS Partner](./Certificados/13246_3_5965670_1725040993_AWS%20Course%20Completion%20Certificate.pdf)
