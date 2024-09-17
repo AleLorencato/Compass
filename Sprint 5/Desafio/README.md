@@ -9,12 +9,13 @@
 
 ### Passo 2: Instalar as Dependências
 
-### Passo 3: Configurar as Credenciais AWS
+### Passo 3: Fazer o upload do arquivo CSV para o S3
+
+### Passo 4: Configurar as Credenciais AWS
 Crie um arquivo .env na raiz do projeto e adicione suas credenciais AWS
 
-### Passo 4: Executar o Script
+### Passo 5: Executar o Script
 Execute o script script.py para realizar as consultas no arquivo CSV armazenado no S3
-
 
 O script script.py realiza duas consultas no arquivo CSV armazenado no S3:
 

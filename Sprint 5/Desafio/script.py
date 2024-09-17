@@ -26,7 +26,6 @@ firstQuery = client.select_object_content(
     InputSerialization={'CSV': {"FileHeaderInfo": "Use", "FieldDelimiter": ";", "AllowQuotedRecordDelimiter": True}},
     OutputSerialization={'CSV': {}},
 )
-
 secondQuery = client.select_object_content(
     Bucket=Bucketname,
     Key=Key,

@@ -15,4 +15,7 @@ Evidência 2: Execução do desafio
   ![Foto no repositório](./Certificados/certificado-Cloud-Quest.png)
 
 - Certificado do Curso AWS Cloud Quest: Cloud Practitioner
-  ![Link para o Credly](https://www.credly.com/badges/0f606199-789b-429e-a953-3202774f9799/public_url)
+  (https://www.credly.com/badges/0f606199-789b-429e-a953-3202774f9799/public_url)
+
+- Certificado do Curso de preparação para o exame AWS Certified Cloud Practitioner
+  ![Certificado](./Certificados/18719_5_5965670_1726537980_AWS%20Skill%20Builder%20Course%20Completion%20Certificate.pdf)
