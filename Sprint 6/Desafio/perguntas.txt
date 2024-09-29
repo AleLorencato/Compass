@@ -1,0 +1,26 @@
+1- Há uma variação nas notas médias de animação e comédia de acordo com a faixa etária e o gênero dos votantes no TMDB?
+    Verificar se há uma tendência de determinados gêneros de animação receberem avaliações mais altas ou baixas entre diferentes grupos de espectadores.
+
+2- Os filmes e séries com avaliações discrepantes no TMDB compartilham algum padrão comum em termos de duração, gênero ou país de origem?
+    Explorar se as discrepâncias nas avaliações estão ligadas a características como a duração, gênero ou nacionalidade das produções.
+
+3- Como as notas de filmes de comédia e animação mudam em dias consecutivos no TMDB?
+    Verificar se as notas médias de filmes de comédia e animação variam significativamente de um dia para o outro, comparando as avaliações de um dia com as do dia anterior.
+
+4- O número de votos de filmes e séries de comédia e animação no CSV está correlacionado com o número de votos no TMDB?
+    Analisar a correlação entre o número de votos do CSV e os dados do IMDB, verificando se há uma correspondência direta ou se existem diferenças na popularidade das produções em cada plataforma.
+
+5- Filmes e séries de animação ou comédia lançados em diferentes décadas têm variação significativa nas notas médias?
+    Analisar se filmes e séries de comédia e animação de décadas passadas são avaliados de forma diferente em comparação com os lançados recentemente.
+
+6- Filmes e séries de animação e comédia com maior número de votos ou presença de grandes nomes (atores ou diretores renomados) tendem a ter uma nota média mais alta?
+    Relação entre popularidade (número de votos e presença de grandes nomes) e notas médias.
+
+7- Qual a duração média dos filmes de comédia e animação mais bem avaliados?
+    Explorar se filmes de comédia e animação mais curtos ou mais longos tendem a ser melhor avaliados pelo público.
+
+8- Qual o percentual de séries de comédia dirigidas por mulheres e homens e como essas séries são avaliadas em comparação?
+   Comparar a distribuição de diretores e diretoras de séries de comédia, analisando se há uma diferença significativa nas avaliações de acordo com o gênero do diretor.
+
+9- Existe uma correlação entre a popularidade dos filmes de comédia e a presença de grandes nomes do cinema (atores ou diretores renomados)?
+    Ver a influência que grandes nomes da indústria têm sobre a popularidade e o sucesso dos filmes de comédia, possivelmente avaliando a média de avaliações e o número de votos.
