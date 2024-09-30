@@ -2,6 +2,58 @@
 
 1. [Pasta do Desafio](./Desafio/)
 
+# Sobre o Desafio Final
+
+## Desafio de Construção de Data Lake no tema de Animação e Comédia
+
+### Objetivo
+
+O desafio consiste na construção de um Data Lake para armazenar, processar e consumir dados de filmes e séries relacionados aos gêneros de **animação** e **comédia**. O processo é dividido em múltiplas camadas que incluem ingestão, armazenamento, processamento e consumo dos dados.
+
+### Etapas do Desafio
+
+1. **Ingestão dos Dados**: Serão realizados dois tipos de ingestão de dados:
+
+   - Arquivos CSV contendo informações sobre filmes e séries (fornecidos no início do desafio).
+   - Dados obtidos através da API do **TMDB** (The Movie Database).
+
+2. **Armazenamento em Data Lake**: Os dados serão organizados e armazenados no Data Lake, utilizando a camada **RAW Zone** do **AWS S3**. Após a ingestão, os dados serão processados e movidos para camadas posteriores onde serão padronizados e catalogados.
+
+3. **Processamento e Transformação**: Com o uso de **Apache Spark**, os dados serão processados, transformados e organizados em um formato dimensional para análise.
+
+4. **Consumo de Dados e Análises**: As informações processadas serão consumidas utilizando dashboards analíticos para responder perguntas específicas sobre filmes e séries de animação e comédia.
+
+### Motivo da Análise
+
+O Data Lake será utilizado para responder questões relacionadas ao desempenho de filmes e séries de animação e comédia, a fim de identificar padrões de sucesso e discrepâncias entre diferentes plataformas de avaliação (TMDB e IMDB).
+
+### Perguntas que serão respondidas
+
+1. Há uma variação nas notas médias de animação e comédia de acordo com a faixa etária e o gênero dos votantes no TMDB?
+   Verificar se há uma tendência de determinados gêneros de animação receberem avaliações mais altas ou baixas entre diferentes grupos de espectadores.
+
+2. Os filmes e séries com avaliações discrepantes no TMDB compartilham algum padrão comum em termos de duração, gênero ou país de origem?
+   Explorar se as discrepâncias nas avaliações estão ligadas a características como a duração, gênero ou nacionalidade das produções.
+
+3. Como as notas de filmes de comédia e animação mudam em dias consecutivos no TMDB?
+   Verificar se as notas médias de filmes de comédia e animação variam significativamente de um dia para o outro, comparando as avaliações de um dia com as do dia anterior.
+
+4. O número de votos de filmes de comédia e animação no CSV está correlacionado com o número de votos no TMDB?
+   Analisar a correlação entre o número de votos do CSV e os dados do IMDB, verificando se há uma correspondência direta ou se existem diferenças na popularidade das produções em cada plataforma.
+
+5. Filmes de animação lançados em diferentes décadas têm variação significativa nas notas médias?
+   Analisar se Filmes de animação de décadas passadas são avaliados de forma diferente em comparação com as lançadas recentemente.
+
+6. Filmes de comédia com maior número de votos ou presença de grandes nomes (atores ou diretores renomados) tendem a ter uma nota média mais alta?
+   Relação entre popularidade (número de votos e presença de grandes nomes) e notas médias.
+
+7. Qual a duração média dos filmes de animação mais bem avaliados?
+   Explorar se filmes de animação mais curtos ou mais longos tendem a ser melhor avaliados pelo público.
+
+8. Qual o percentual de séries de comédia dirigidas por mulheres e homens e como essas séries são avaliadas em comparação?
+   Comparar a distribuição de diretores e diretoras de séries de comédia, analisando se há uma diferença significativa nas avaliações de acordo com o gênero do diretor.
+
+
 # Exercícios
 
 1. [Exercício 1](./Exercicios/ex1/)
