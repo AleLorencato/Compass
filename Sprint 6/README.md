@@ -29,30 +29,29 @@ O Data Lake será utilizado para responder questões relacionadas ao desempenho 
 
 ### Perguntas que serão respondidas
 
-1. Há uma variação nas notas médias de animação e comédia de acordo com a faixa etária e o gênero dos votantes no TMDB?
-   Verificar se há uma tendência de determinados gêneros de animação receberem avaliações mais altas ou baixas entre diferentes grupos de espectadores.
+1. Existe uma correlação entre o orçamento de um filme de comédia e sua nota média? Filmes com orçamentos mais altos tendem a receber melhores avaliações?
+   Comparar o orçamento médio de filmes de comédia com alta e baixa avaliação.
 
-2. Os filmes e séries com avaliações discrepantes no TMDB compartilham algum padrão comum em termos de duração, gênero ou país de origem?
-   Explorar se as discrepâncias nas avaliações estão ligadas a características como a duração, gênero ou nacionalidade das produções.
+2. Existe alguma diferença significativa nas avaliações de filmes de comédia produzidos em diferentes países?
+   Analisar a distribuição de gêneros de comédia por país de origem.
 
-3. Como as notas de filmes de comédia e animação mudam em dias consecutivos no TMDB?
-   Verificar se as notas médias de filmes de comédia e animação variam significativamente de um dia para o outro, comparando as avaliações de um dia com as do dia anterior.
+3. Existe uma relação entre a receita de um filme de comédia e sua nota média? Filmes mais lucrativos tendem a ser melhor avaliados?
+   Comparar a receita média de filmes de comédia com alta e baixa avaliação.
 
-4. O número de votos de filmes de comédia e animação no CSV está correlacionado com o número de votos no TMDB?
+4. O número de votos de filmes de comédia no CSV está correlacionado com o número de votos no TMDB?
    Analisar a correlação entre o número de votos do CSV e os dados do IMDB, verificando se há uma correspondência direta ou se existem diferenças na popularidade das produções em cada plataforma.
 
-5. Filmes de animação lançados em diferentes décadas têm variação significativa nas notas médias?
-   Analisar se Filmes de animação de décadas passadas são avaliados de forma diferente em comparação com as lançadas recentemente.
+5. Filmes de comédia lançados em diferentes décadas têm variação significativa nas notas médias?
+   Analisar se Filmes de comédia de décadas passadas são avaliados de forma diferente em comparação com as lançadas recentemente.
 
 6. Filmes de comédia com maior número de votos ou presença de grandes nomes (atores ou diretores renomados) tendem a ter uma nota média mais alta?
    Relação entre popularidade (número de votos e presença de grandes nomes) e notas médias.
 
-7. Qual a duração média dos filmes de animação mais bem avaliados?
-   Explorar se filmes de animação mais curtos ou mais longos tendem a ser melhor avaliados pelo público.
+7. Qual a duração média dos filmes de comédia mais bem avaliados?
+   Explorar se filmes de comédia mais curtos ou mais longos tendem a ser melhor avaliados pelo público.
 
 8. Qual o percentual de séries de comédia dirigidas por mulheres e homens e como essas séries são avaliadas em comparação?
    Comparar a distribuição de diretores e diretoras de séries de comédia, analisando se há uma diferença significativa nas avaliações de acordo com o gênero do diretor.
-
 
 # Exercícios
 
