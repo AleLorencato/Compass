@@ -1,0 +1,9 @@
+FROM jupyter/all-spark-notebook:latest
+
+USER root
+
+USER $NB_UID
+
+WORKDIR /home/jovyan/work
+
+COPY README.md /home/jovyan/work/README.md

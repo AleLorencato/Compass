@@ -1,0 +1,38 @@
+FROM amazonlinux:2.0.20241001.0
+
+RUN yum update -y && \
+    yum install -y \
+    gcc bzip2-devel libffi-devel zlib-devel make tar gzip wget perl
+
+RUN cd /usr/src && \
+    wget https://www.openssl.org/source/openssl-1.1.1l.tar.gz && \
+    tar xzf openssl-1.1.1l.tar.gz && \
+    cd openssl-1.1.1l && \
+    ./config --prefix=/usr/local/openssl --openssldir=/usr/local/openssl shared zlib && \
+    make && \
+    make install && \
+    rm -f /usr/src/openssl-1.1.1l.tar.gz
+
+ENV PATH="/usr/local/openssl/bin:$PATH"
+ENV LD_LIBRARY_PATH="/usr/local/openssl/lib"
+ENV CPATH="/usr/local/openssl/include"
+ENV LIBRARY_PATH="/usr/local/openssl/lib"
+
+RUN cd /usr/src && \
+    wget https://www.python.org/ftp/python/3.10.0/Python-3.10.0.tgz && \
+    tar xzf Python-3.10.0.tgz && \
+    cd Python-3.10.0 && \
+    ./configure --enable-optimizations --with-openssl=/usr/local/openssl && \
+    make altinstall && \
+    rm -f /usr/src/Python-3.10.0.tgz
+
+RUN yum clean all
+
+RUN wget https://bootstrap.pypa.io/get-pip.py && \
+    python3.10 get-pip.py && \
+    rm -f get-pip.py
+
+RUN python3.10 -m pip install --upgrade pip
+
+RUN python3.10 --version && \
+    python3.10 -m pip --version
