@@ -14,9 +14,11 @@ Requests
 ## Passo a Passo
 
 - Passo 1: Clonar o Repositório
+  
   Clone o repositório para sua máquina local
 
 - Passo 2: Criar a Camada Lambda
+  
   Execute o docker para criar a camada lambda:
 
 ```bash
@@ -51,13 +53,16 @@ Fazer Upload da Camada para o AWS Lambda
 Na aba Layers, crie uma nova camada e selecione a versão do python 3.10 adicionando o arquivo compactado.(Formato .zip)
 
 - Passo 3: Configurar a Função Lambda
+  
   No console do AWS Lambda, crie uma função lambda com python 3.10 e adicione a camada criada.
 
 - Passo 4: Configurar a o arquivo lambda_function.py e as dependências
+  
   Coloque o Arquivo requests-layer.zip na pasta da função lambda conforme na imagem abaixo:
   ![Função Lambda](../Evidencias/image.png)
 
 - Passo 5: Configurar as Credenciais AWS
+  
   Salvar as chaves da API do TMDB como variáveis de ambiente no AWS lambda
 
 ### Agora a função lambda está pronta para ser executada.
@@ -67,5 +72,7 @@ Na aba Layers, crie uma nova camada e selecione a versão do python 3.10 adicion
 É necessário colocar a pasta requests-layer.zip na pasta da função lambda para que a função lambda consiga executar, pois a biblioteca requests teve que ser instalada manualmente devido a problemas de compatibilidade com o AWS Lambda.
 
 - Os arquivos JSON serão salvos no bucket do S3 com o caminho :
+  
   Filmes: Raw/Local/TMDB/JSON/Movies/[data atual]/tmdb_comedy_movies.json
+  
   Séries: Raw/Local/TMDB/JSON/Series/[data atual]/tmdb_comedy_series.json
