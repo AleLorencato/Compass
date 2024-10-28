@@ -3,6 +3,7 @@ import json
 import boto3
 import os
 import datetime
+import random
 from botocore.exceptions import ClientError
 
 Bucketname = "compass-desafio-final"
@@ -14,6 +15,7 @@ API_KEY = os.environ['API_KEY']
 READ_TOKEN = os.environ['READ_TOKEN']
 
 def fetch_movies_by_genre(genre_id, genre_name, max_movies=100):
+    pagina = random.randint(1, 500)
     url = f'{BASE_URL}/discover/movie'
     headers = {
         "accept": "application/json",
@@ -25,7 +27,7 @@ def fetch_movies_by_genre(genre_id, genre_name, max_movies=100):
         'with_genres': genre_id,
         'primary_release_date.gte': '1894-01-01',
         'primary_release_date.lte': '2022-12-31',
-        'page': 1
+        'page': pagina
     }
 
     all_movies = []
@@ -68,6 +70,7 @@ def fetch_movie_details(movie_id):
         return {}
 
 def fetch_series_by_genre(genre_id, genre_name, max_series=100):
+    pagina = random.randint(1, 500)
     url = f'{BASE_URL}/discover/tv'
     headers = {
         "accept": "application/json",
@@ -79,7 +82,7 @@ def fetch_series_by_genre(genre_id, genre_name, max_series=100):
         'with_genres': genre_id,
         'first_air_date.gte': '1894-01-01',
         'first_air_date.lte': '2022-12-31',
-        'page': 1
+        'page': pagina
     }
 
     all_series = []
@@ -122,7 +125,7 @@ def fetch_serie_details(serie_id):
         return {}
 
 def put_object_to_s3(data, genre_name, date, content_type):
-    s3_file = f'Raw/Local/TMDB/JSON/{content_type}/{date}/tmdb_{genre_name}_{content_type.lower()}.json'
+    s3_file = f'Raw/TMDB/JSON/{content_type}/{date}/tmdb_{genre_name}_{content_type.lower()}.json'
     try:
         file_content = json.dumps(data, ensure_ascii=False, indent=4)
         client.put_object(Bucket=Bucketname, Key=s3_file, Body=file_content)
