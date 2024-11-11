@@ -24,14 +24,14 @@ A motivação para este desafio é garantir que os dados armazenados na camada T
 4. O número de votos de filmes de comédia no CSV está correlacionado com o número de votos no TMDB?
    Analisar a correlação entre o número de votos do CSV e os dados do TMDB, verificando se há uma correspondência direta ou se existem diferenças na popularidade das produções em cada plataforma.
 
-5. Filmes de comédia lançados em diferentes décadas têm variação significativa nas notas médias?
-   Analisar se filmes de comédia de décadas passadas são avaliados de forma diferente em comparação com os lançados recentemente.
-
-6. Filmes de comédia com maior número de votos ou presença de grandes nomes (atores ou diretores renomados) tendem a ter uma nota média mais alta?
+5. Filmes de comédia com maior número de votos ou presença de grandes nomes (atores ou diretores renomados) tendem a ter uma nota média mais alta?
    Relação entre popularidade (número de votos e presença de grandes nomes) e notas médias.
 
-7. Qual a duração média dos filmes de comédia mais bem avaliados?
-   Explorar se filmes de comédia mais curtos ou mais longos tendem a ser melhor avaliados pelo público.
+6. Séries de comédia lançados em diferentes décadas têm variação significativa nas notas médias?
+   Analisar se séries de comédia de décadas passadas são avaliados de forma diferente em comparação com os lançados recentemente.
+
+7. Qual a duração média das séries de comédia mais bem avaliados?
+   Explorar se séries de comédia mais curtos ou mais longos tendem a ser melhor avaliados pelo público.
 
 8. Qual o percentual de séries de comédia dirigidas por mulheres e homens e como essas séries são avaliadas em comparação?
    Comparar a distribuição de diretores e diretoras de séries de comédia, analisando se há uma diferença significativa nas avaliações de acordo com o gênero do diretor.

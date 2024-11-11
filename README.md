@@ -56,3 +56,4 @@ Nesses cursos, vi o básico em alguns serviços AWS, como S3, RDS, EC2, IAM, VPC
 - [Sprint 6](./Sprint%206/README.md)
 - [Sprint 7](./Sprint%207/README.md)
 - [Sprint 8](./Sprint%208/README.md)
+- [Sprint 9](./Sprint%209/README.md)

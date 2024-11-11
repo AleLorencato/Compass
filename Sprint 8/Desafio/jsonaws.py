@@ -41,7 +41,6 @@ series_cast = {
     "id":"int",
     "name":"string",
     "number_of_episodes":"int",
-    "number_of_seasons":"int",
     "origin_country":"array<string>",
     "original_language":"string",
     "original_name":"string",
@@ -85,14 +84,14 @@ def process_json_to_parquet(input_path, target_path, tipo_arquivo):
 
         df = spark.read.option("multiline", "true").json(f"s3://{bucket_name}/{file_path}")
         if(tipo_arquivo == "filmes"):
-            df = df.drop("adult", "video","backdrop_path","belongs_to_collection","homepage","overview","tagline","production_companies","production_countries","poster_path","spoken_languages","genres")
+            df = df.drop("adult", "video","backdrop_path","belongs_to_collection","homepage","overview","tagline","production_companies","production_countries","poster_path","spoken_languages","genres","id","status")
             for column, data_type in movies_cast.items():
                 if data_type == "date":
                     df = df.withColumn(column, to_date(col(column)))
                 else:
                     df = df.withColumn(column, col(column).cast(data_type))
         else:
-            df = df.drop("adult","type","status","spoken_languages","seasons","production_countries","production_companies","taglines","poster_path","overview","next_episode_to_air","networks","last_episode_to_air","last_air_date","in_production","homepage","genres","created_by","backdrop_path")
+            df = df.drop("adult","type","status","spoken_languages","seasons","production_countries","production_companies","tagline","poster_path","overview","next_episode_to_air","networks","last_episode_to_air","last_air_date","in_production","homepage","genres","created_by","backdrop_path","number_of_seasons","languages")
 
             for column, data_type in series_cast.items():
                 if data_type == "date":
