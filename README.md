@@ -1,24 +1,4 @@
-# Olá! meu nome é Alexandre e tenho 20 anos! :smile:
-
-## Sobre mim
-
-![alt text](./FotoPessoal.jpg)
-
-Resido em Pelotas e estou cursando o 3º semestre de Tecnologia em Sistemas para Internet no IFSUL - Câmpus Pelotas.
-
----
-
-## Projetos:
-
-- Um Jogo de Batalha naval Feito em C
-- Um Mod de Minecraft em Java
-- Um site de compra e venda de carros (Ainda em Desenvolvimento)
-
----
-
-- Experiência: Tive experiência como técnico de infomática no Exército Brasileiro em manutenção de hardware e software, em que trabalhava quase 100% com sistemas linux(Na maioria dos casos Ubuntu).
-- Conhecimentos: Tenho conhecimento em C, Java, Python, PHP, HTML, CSS, JavaScript, SQL, Git e Linux.
-- Hobbies: Jogar CS e jogos de estratégia no tempo livre.
+# Material feito no Programa de bolsas na Compass UOL de Data Engineering.
 
 ## O que Estou Aprendendo
 
